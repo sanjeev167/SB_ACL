@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="logback.xsd">
+
+    <springProperty scope="context" name="LOG_PATH" source="log.path" defaultValue="/ApplicationLog"/>
+    
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+    <include resource="org/springframework/boot/logging/logback/file-appender.xml" />	
+	
+<appender name="LOG_ERROR_ONLY" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_PATH}/errorOnly/practiceOnNetLog.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_PATH}/errorOnly/practiceOnNetLog.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>			
+			<timeBasedFileNamingAndTriggeringPolicy	class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10KB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>1</maxHistory><!-- It will keep lig history of one day only. After one day the old log history will be automatically deleted -->
+			<cleanHistoryOnStart>true</cleanHistoryOnStart>
+		</rollingPolicy>
+		
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%level] [%thread]	[%logger:%line] %msg%n </pattern>
+		</encoder>
+		
+		<!-- Set which level of log is/are to be written in log file -->
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>
+			<onMatch>DENY</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>DENY</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>TRACE</level>
+			<onMatch>DENY</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>WARN</level>
+			<onMatch>DENY</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+		</filter>
+	</appender>
+
+<appender name="LOG_INFO_AND_ERROR_BOTH" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_PATH}/infoAndError/practiceOnNetLog.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_PATH}/infoAndError/practiceOnNetLog.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>			
+			<timeBasedFileNamingAndTriggeringPolicy	class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10KB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>1</maxHistory><!-- It will keep lig history of one day only. After one day the old log history will be automatically deleted -->
+			<cleanHistoryOnStart>true</cleanHistoryOnStart>
+		</rollingPolicy>
+		
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%level] [%thread]	[%logger:%line] %msg%n </pattern>
+		</encoder>
+		
+		<!-- Set which level of log is/are to be written in log file -->
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>
+			<onMatch>DENY</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>TRACE</level>
+			<onMatch>DENY</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>WARN</level>
+			<onMatch>DENY</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+		</filter>
+	</appender>
+
+<!-- Logging for log level debug -->
+<appender name="LOG_DEBUG_AND_ERROR_BOTH" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_PATH}/debugAndError/practiceOnNetLog.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_PATH}/debugAndError/practiceOnNetLog.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>			
+			<timeBasedFileNamingAndTriggeringPolicy	class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10KB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>1</maxHistory><!-- It will keep lig history of one day only. After one day the old log history will be automatically deleted -->
+			<cleanHistoryOnStart>true</cleanHistoryOnStart>
+		</rollingPolicy>
+		
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%level] [%thread]	[%logger:%line] %msg%n </pattern>
+		</encoder>
+		
+		<!-- Set which level of log is/are to be written in log file -->
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>
+			<onMatch>ACCEPT</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>DENY</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>TRACE</level>
+			<onMatch>DENY</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>WARN</level>
+			<onMatch>DENY</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+		</filter>
+	</appender>
+
+
+<appender name="STDOUT"	class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint}	%m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}</pattern>
+		</encoder>
+		<!-- Set which level of log is/are to be written on the console -->
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>
+			<onMatch>DENY</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>TRACE</level>
+			<onMatch>DENY</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>WARN</level>
+			<onMatch>ACCEPT</onMatch>
+		</filter>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+		</filter>
+	</appender>
+
+<!-- Here we will tell which appender will be used writing logs. File appender has been referenced here. Console is by default  -->
+<root>
+   <!-- Here we are not setting any level. Levels are being filtered while defining their corresponding appenders. -->
+	<appender-ref ref="STDOUT" />		
+	<!-- This will log error only. -->
+	<!-- <appender-ref ref="STDOUT" /> -->
+	<!-- <appender-ref ref="LOG_ERROR_ONLY" /> -->
+	<!-- This will log error and info both. -->
+	<!-- <appender-ref ref="LOG_INFO_AND_ERROR_BOTH" /> -->
+	<!-- This will log error and debug both. -->
+	<!-- <appender-ref ref="LOG_DEBUG_AND_ERROR_BOTH" /> -->
+</root>
+
+</configuration>
