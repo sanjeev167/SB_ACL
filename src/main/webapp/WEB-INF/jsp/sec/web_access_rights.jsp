@@ -214,39 +214,12 @@
 	font-size: small;
 }
 
-.example-modal .modal {
-	position: relative;
-	top: auto;
-	bottom: auto;
-	right: auto;
-	left: auto;
-	display: block;
-	z-index: 1;
-}
-
-.example-modal .modal {
-	background: transparent !important;
-}
-</style>
-
-
-<style type="text/css">
-.modal-dialog {
-	width: 400px;
-}
-
-.modal-header {
-	background-color: #337AB7;
-	padding: 16px 16px;
-	color: #FFF;
-	border-bottom: 2px dashed #337AB7;
-}
 </style>
 
 <!-- modal for add/update/view/search -->
 <div class="modal fade" id="modal-common">
-	<div class="modal-dialog">
-		<div class="modal-content">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content"  style="border-radius: 10px;">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal"
 					aria-label="Close">
@@ -344,13 +317,13 @@
 
 
 <!-- DataTables -->
-<script
-	src="<%request.getContextPath();%>/resources/assets/bower_components/jquery/dist/jquery.min.js"
-	type="text/javascript"></script>
-<script
-	src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-<script
-	src="https://cdn.datatables.net/1.10.21/js/dataTables.jqueryui.min.js"></script>
+<!-- jQuery 3 -->
+	<script
+		src="<%request.getContextPath();%>/resources/assets/bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap 3.3.7 -->
+	<script
+		src="<%request.getContextPath();%>/resources/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"
+		type="text/javascript"></script>
 
 <script
 	src="${contextPath}/resources/pagejs/webAccessRights.js"></script>

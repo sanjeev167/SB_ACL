@@ -181,3 +181,14 @@
 </div>
 
 <!-- /.tab-pane -->
+
+
+
+<!-- jQuery 3 -->
+	<script
+		src="<%request.getContextPath();%>/resources/assets/bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap 3.3.7 -->
+	<script
+		src="<%request.getContextPath();%>/resources/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"
+		type="text/javascript"></script>
+

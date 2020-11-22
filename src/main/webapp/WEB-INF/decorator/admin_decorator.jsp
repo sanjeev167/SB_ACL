@@ -33,13 +33,15 @@
 <link rel="stylesheet"
 	href="<%request.getContextPath();%>/resources/assets/plugins/iCheck/all.css">
 
-<!-- Data table css styling using data table -->
+
+<!-- Data Tables -->
 <link rel="stylesheet"
-	href="https://code.jquery.com/ui/1.12.1/themes/trontastic/jquery-ui.css">
+	href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
 
 
-<link rel="stylesheet"
-	href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+
 
 <!--	
 <link rel="stylesheet"
@@ -165,10 +167,15 @@ desired effect
 	<!-- REQUIRED JS SCRIPTS -->
 	
 	<!-- Data table js requirement -->
-	<!-- Bootstrap 3.3.7 -->
+	<!-- DataTables -->
 	<script
-		src="<%request.getContextPath();%>/resources/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"
-		type="text/javascript"></script>
+		src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script
+		src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+	<script
+		src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+	<script
+		src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
 
 
 	<!-- SlimScroll -->

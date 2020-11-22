@@ -1,0 +1,267 @@
+# Created at 2020-11-22T14:45:23.343
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:396)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created at 2020-11-22T14:45:26.065
+Unexpected IOException with stream: 2020-11-22 14:45:26.061  INFO 9632 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate :	Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+
+
+# Created at 2020-11-22T14:45:26.283
+Unexpected IOException with stream: 2020-11-22 14:45:26.282  INFO 9632 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate :	Finished Spring Data repository scanning in 202ms. Found 22 JPA repository interfaces.
+
+
+# Created at 2020-11-22T14:45:26.289
+Unexpected IOException with stream: 2020-11-22 14:45:26.289  INFO 9632 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate :	Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+
+
+# Created at 2020-11-22T14:45:26.313
+Unexpected IOException with stream: 2020-11-22 14:45:26.312  INFO 9632 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate :	Finished Spring Data repository scanning in 22ms. Found 4 JPA repository interfaces.
+
+
+# Created at 2020-11-22T14:45:27.821
+Unexpected IOException with stream: 2020-11-22 14:45:27.820  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6b4d0be2' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:27.853
+Unexpected IOException with stream: 2020-11-22 14:45:27.852  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'aclPersistenceConfiguration' of type [com.config.mutable.db.AclPersistenceConfiguration$$EnhancerBySpringCGLIB$$e14e28a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:27.890
+Unexpected IOException with stream: 2020-11-22 14:45:27.889  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'aclDataSource' of type [org.springframework.jdbc.datasource.DriverManagerDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:27.962
+Unexpected IOException with stream: 2020-11-22 14:45:27.960  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:27.979
+Unexpected IOException with stream: 2020-11-22 14:45:27.978  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:27.981
+Unexpected IOException with stream: 2020-11-22 14:45:27.980  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'aclMethodSecurityConfiguration' of type [com.config.mutable.AclMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$eb9f249e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:28.021
+Unexpected IOException with stream: 2020-11-22 14:45:28.019  INFO 9632 --- [           main] o.s.c.ehcache.EhCacheManagerFactoryBean  :	Initializing EhCache CacheManager
+
+
+# Created at 2020-11-22T14:45:28.265
+Unexpected IOException with stream: 2020-11-22 14:45:28.264  WARN 9632 --- [           main] n.sf.ehcache.config.CacheConfiguration   :	Configuration problem for cache cache1: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+
+
+# Created at 2020-11-22T14:45:28.389
+Unexpected IOException with stream: 2020-11-22 14:45:28.388  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'aclCacheManager' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:28.409
+Unexpected IOException with stream: 2020-11-22 14:45:28.409  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'aclCacheManager' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:28.483
+Unexpected IOException with stream: 2020-11-22 14:45:28.482  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'aclEhCacheFactoryBean' of type [org.springframework.cache.ehcache.EhCacheFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:28.535
+Unexpected IOException with stream: 2020-11-22 14:45:28.534  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'aclEhCacheFactoryBean' of type [net.sf.ehcache.Cache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:28.552
+Unexpected IOException with stream: 2020-11-22 14:45:28.551  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'permissionGrantingStrategy' of type [org.springframework.security.acls.domain.DefaultPermissionGrantingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:28.562
+Unexpected IOException with stream: 2020-11-22 14:45:28.560  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'aclCache' of type [org.springframework.security.acls.domain.EhCacheBasedAclCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:28.592
+Unexpected IOException with stream: 2020-11-22 14:45:28.592  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'customPermissionFactory' of type [com.config.mutable.CustomPermissionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:28.608
+Unexpected IOException with stream: 2020-11-22 14:45:28.607  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'aclService' of type [org.springframework.security.acls.jdbc.JdbcMutableAclService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:28.627
+Unexpected IOException with stream: 2020-11-22 14:45:28.626  INFO 9632 --- [           main] trationDelegate$BeanPostProcessorChecker :	Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+
+# Created at 2020-11-22T14:45:29.115
+Unexpected IOException with stream: 2020-11-22 14:45:29.113  INFO 9632 --- [           main] org.hibernate.Version                    :	HHH000412: Hibernate ORM core version 5.4.17.Final
+
+
+# Created at 2020-11-22T14:45:29.424
+Unexpected IOException with stream: 2020-11-22 14:45:29.423  INFO 9632 --- [           main] o.hibernate.annotations.common.Version   :	HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+
+
+# Created at 2020-11-22T14:45:29.796
+Unexpected IOException with stream: 2020-11-22 14:45:29.795  INFO 9632 --- [           main] org.hibernate.dialect.Dialect            :	HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+
+
+# Created at 2020-11-22T14:45:31.968
+Unexpected IOException with stream: 2020-11-22 14:45:31.967  INFO 9632 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       :	HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.AtomikosJtaPlatform]
+
+
+# Created at 2020-11-22T14:45:32.204
+Unexpected IOException with stream: 2020-11-22 14:45:32.204  INFO 9632 --- [           main] j.LocalContainerEntityManagerFactoryBean :	Initialized JPA EntityManagerFactory for persistence unit 'APP_JPA_UNIT'
+
+
+# Created at 2020-11-22T14:45:32.264
+Unexpected IOException with stream: 2020-11-22 14:45:32.264  INFO 9632 --- [           main] org.hibernate.dialect.Dialect            :	HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+
+
+# Created at 2020-11-22T14:45:32.904
+Unexpected IOException with stream: 2020-11-22 14:45:32.903  INFO 9632 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       :	HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.AtomikosJtaPlatform]
+
+
+# Created at 2020-11-22T14:45:32.949
+Unexpected IOException with stream: 2020-11-22 14:45:32.948  INFO 9632 --- [           main] j.LocalContainerEntityManagerFactoryBean :	Initialized JPA EntityManagerFactory for persistence unit 'APP_JPA_UNIT'
+
+
+# Created at 2020-11-22T14:45:32.981
+Unexpected IOException with stream: 2020-11-22 14:45:32.980  INFO 9632 --- [           main] org.hibernate.dialect.Dialect            :	HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+
+
+# Created at 2020-11-22T14:45:33.098
+Unexpected IOException with stream: 2020-11-22 14:45:33.097  INFO 9632 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       :	HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.AtomikosJtaPlatform]
+
+
+# Created at 2020-11-22T14:45:33.106
+Unexpected IOException with stream: 2020-11-22 14:45:33.106  INFO 9632 --- [           main] j.LocalContainerEntityManagerFactoryBean :	Initialized JPA EntityManagerFactory for persistence unit 'JPA_UNIT_ACL'
+
+
+# Created at 2020-11-22T14:45:33.125
+Unexpected IOException with stream: 2020-11-22 14:45:33.124  INFO 9632 --- [           main] org.hibernate.dialect.Dialect            :	HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+
+
+# Created at 2020-11-22T14:45:33.237
+Unexpected IOException with stream: 2020-11-22 14:45:33.237  INFO 9632 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       :	HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.AtomikosJtaPlatform]
+
+
+# Created at 2020-11-22T14:45:33.249
+Unexpected IOException with stream: 2020-11-22 14:45:33.247  INFO 9632 --- [           main] j.LocalContainerEntityManagerFactoryBean :	Initialized JPA EntityManagerFactory for persistence unit 'JPA_UNIT_ACL'
+
+
+# Created at 2020-11-22T14:45:36.681
+Unexpected IOException with stream: 2020-11-22 14:45:36.680  INFO 9632 --- [           main] com.pvt.post.service.AdminService        :	Start: Initializing jdbac template with datasource
+
+
+# Created at 2020-11-22T14:45:36.686
+Unexpected IOException with stream: 2020-11-22 14:45:36.686  INFO 9632 --- [           main] com.pvt.post.service.AdminService        :	End: Initializing jdbac template with datasource
+
+
+# Created at 2020-11-22T14:45:36.692
+Unexpected IOException with stream: 2020-11-22 14:45:36.691  INFO 9632 --- [           main] o.s.aop.framework.CglibAopProxy          :	Unable to proxy interface-implementing method [public final void org.springframework.jdbc.core.support.JdbcDaoSupport.setDataSource(javax.sql.DataSource)] because it is marked as final: Consider using interface-based JDK proxies instead!
+
+
+# Created at 2020-11-22T14:45:36.693
+Unexpected IOException with stream: 2020-11-22 14:45:36.693  INFO 9632 --- [           main] o.s.aop.framework.CglibAopProxy          :	Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+
+
+# Created at 2020-11-22T14:45:36.731
+Unexpected IOException with stream: 2020-11-22 14:45:36.730  INFO 9632 --- [           main] com.pvt.post.service.PersonalService     :	Start: Initializing jdbac template with datasource
+
+
+# Created at 2020-11-22T14:45:36.732
+Unexpected IOException with stream: 2020-11-22 14:45:36.731  INFO 9632 --- [           main] com.pvt.post.service.PersonalService     :	End: Initializing jdbac template with datasource
+
+
+# Created at 2020-11-22T14:45:36.738
+Unexpected IOException with stream: 2020-11-22 14:45:36.737  INFO 9632 --- [           main] o.s.aop.framework.CglibAopProxy          :	Unable to proxy interface-implementing method [public final void org.springframework.jdbc.core.support.JdbcDaoSupport.setDataSource(javax.sql.DataSource)] because it is marked as final: Consider using interface-based JDK proxies instead!
+
+
+# Created at 2020-11-22T14:45:36.739
+Unexpected IOException with stream: 2020-11-22 14:45:36.739  INFO 9632 --- [           main] o.s.aop.framework.CglibAopProxy          :	Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+
+
+# Created at 2020-11-22T14:45:36.769
+Unexpected IOException with stream: 2020-11-22 14:45:36.768  INFO 9632 --- [           main] com.pvt.post.service.PublicService       :	Start: Initializing jdbac template with datasource
+
+
+# Created at 2020-11-22T14:45:36.770
+Unexpected IOException with stream: 2020-11-22 14:45:36.769  INFO 9632 --- [           main] com.pvt.post.service.PublicService       :	End: Initializing jdbac template with datasource
+
+
+# Created at 2020-11-22T14:45:36.773
+Unexpected IOException with stream: 2020-11-22 14:45:36.773  INFO 9632 --- [           main] o.s.aop.framework.CglibAopProxy          :	Unable to proxy interface-implementing method [public final void org.springframework.jdbc.core.support.JdbcDaoSupport.setDataSource(javax.sql.DataSource)] because it is marked as final: Consider using interface-based JDK proxies instead!
+
+
+# Created at 2020-11-22T14:45:36.774
+Unexpected IOException with stream: 2020-11-22 14:45:36.773  INFO 9632 --- [           main] o.s.aop.framework.CglibAopProxy          :	Unable to proxy interface-implementing method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is marked as final: Consider using interface-based JDK proxies instead!
+
+
+# Created at 2020-11-22T14:45:40.190
+Unexpected IOException with stream: 2020-11-22 14:45:40.189  INFO 9632 --- [           main] o.s.s.web.DefaultSecurityFilterChain     :	Creating filter chain: Ant [pattern='/resources/**'], []
+
+
+# Created at 2020-11-22T14:45:40.191
+Unexpected IOException with stream: 2020-11-22 14:45:40.190  INFO 9632 --- [           main] o.s.s.web.DefaultSecurityFilterChain     :	Creating filter chain: Ant [pattern='*.css'], []
+
+
+# Created at 2020-11-22T14:45:40.191
+Unexpected IOException with stream: 2020-11-22 14:45:40.191  INFO 9632 --- [           main] o.s.s.web.DefaultSecurityFilterChain     :	Creating filter chain: Ant [pattern='*.js'], []
+
+
+# Created at 2020-11-22T14:45:40.192
+Unexpected IOException with stream: 2020-11-22 14:45:40.192  INFO 9632 --- [           main] o.s.s.web.DefaultSecurityFilterChain     :	Creating filter chain: Ant [pattern='/favicon.ico'], []
+
+
+# Created at 2020-11-22T14:45:40.194
+Unexpected IOException with stream: 2020-11-22 14:45:40.193  INFO 9632 --- [           main] o.s.s.web.DefaultSecurityFilterChain     :	Creating filter chain: Ant [pattern='/'], []
+
+
+# Created at 2020-11-22T14:45:40.195
+Unexpected IOException with stream: 2020-11-22 14:45:40.194  INFO 9632 --- [           main] o.s.s.web.DefaultSecurityFilterChain     :	Creating filter chain: Ant [pattern='/home'], []
+
+
+# Created at 2020-11-22T14:45:40.196
+Unexpected IOException with stream: 2020-11-22 14:45:40.196  INFO 9632 --- [           main] o.s.s.web.DefaultSecurityFilterChain     :	Creating filter chain: Ant [pattern='/pub/**'], []
+
+
+# Created at 2020-11-22T14:45:40.197
+Unexpected IOException with stream: 2020-11-22 14:45:40.196  INFO 9632 --- [           main] o.s.s.web.DefaultSecurityFilterChain     :	Creating filter chain: Ant [pattern='/error/**'], []
+
+
+# Created at 2020-11-22T14:45:40.989
+Unexpected IOException with stream: 2020-11-22 14:45:40.988  INFO 9632 --- [           main] o.s.s.web.DefaultSecurityFilterChain     :	Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@599e79b6, org.springframework.security.web.context.SecurityContextPersistenceFilter@53716c51, org.springframework.security.web.header.HeaderWriterFilter@67c718fc, org.springframework.security.web.authentication.logout.LogoutFilter@9177860, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22a26bd1, org.springframework.security.web.session.ConcurrentSessionFilter@2a57c46c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b76258e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b5cf935, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5138d63a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28b9877d, org.springframework.security.web.session.SessionManagementFilter@41b1686e, org.springframework.security.web.access.ExceptionTranslationFilter@71231636, com.config.filter.AjaxTimeoutRedirectFilter@5aef1a93, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e7918f7]
+
+
+# Created at 2020-11-22T14:45:45.819
+Unexpected IOException with stream: 2020-11-22 14:45:45.818  INFO 9632 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  :	Initializing ExecutorService 'applicationTaskExecutor'
+
+
+# Created at 2020-11-22T14:45:47.750
+Unexpected IOException with stream: 
+
+
+	###############################################################
+
+
+# Created at 2020-11-22T14:45:47.751
+Unexpected IOException with stream: 	#### Application :==> Started and deployed successfully.! #####
+
+
+# Created at 2020-11-22T14:45:47.752
+Unexpected IOException with stream: 	###############################################################
+
+
+
+
+
+# Created at 2020-11-22T14:45:47.790
+Unexpected IOException: 5,1,com.SbAclApplicationTests,contextLoads,null,null,null
+
+
+# Created at 2020-11-22T14:45:48.406
+Unexpected IOException: 6,1,com.SbAclApplicationTests,contextLoads,null,null,null
+
+
+# Created at 2020-11-22T14:45:48.413
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.SbAclApplicationTests,null,null,null
+
+

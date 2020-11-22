@@ -249,14 +249,18 @@
 	</section>
 	<!-- /page content -->
 
+	<!-- page script -->
+<link rel="stylesheet"
+	href="https://code.jquery.com/ui/1.12.1/themes/trontastic/jquery-ui.css">
+	<!-- Data table js requirement -->
 	<!-- jQuery 3 -->
 	<script
 		src="<%request.getContextPath();%>/resources/assets/bower_components/jquery/dist/jquery.min.js"
 		type="text/javascript"></script>
+	<!-- Bootstrap 3.3.7 -->
 	<script
-		src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-	<script
-		src="https://cdn.datatables.net/1.10.21/js/dataTables.jqueryui.min.js"></script>
+		src="<%request.getContextPath();%>/resources/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"
+		type="text/javascript"></script>
 
 
 
