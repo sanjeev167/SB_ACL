@@ -68,11 +68,7 @@
 <!-- Modals for this form -->
 
 <style type="text/css">
-table.cart th, #main-content table.cart th, table.cart td, #main-content table.cart td, table.cart tr, #main-content table.cart tr, #content-area table tr, #content-area table td, #content-area table th {
-    max-width: 100px;
-    padding: 0.857em 0.587em;
-    background-color: red;
-}
+
 .field-error {
 	color: red;
 	font-size: small;

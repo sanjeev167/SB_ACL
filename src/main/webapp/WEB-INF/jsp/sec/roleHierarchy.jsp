@@ -6,24 +6,35 @@
 <!-- Main content -->
 <section class="content container-fluid" >
 	<div class="row">
-		<div class="col-md-5" id="roleHirarchyGridId">
+		<div class="col-md-6" id="roleHirarchyGridId">
 			<div class="box box-primary" style="min-height: 530px;">
 				
+				
 				<div class="box-header with-border">
-					<table width="100%">
-						<tr>
-							<td width="25%"><label>Application Context</label></td>
-							<td width="25%" id="appContextIdg">[ <strong
-								style="color: black;"><span
-									id="showingAppContextLebelId">Showing All Context</span></strong> ]
-							</td>
-						</tr>
-					</table>
 
-
+					<div class="box-title">
+						<button type="button">
+							<i class="fa fa-plus addClass" data-toggle="modal">&nbsp;</i>
+						</button>
+						<button type="button" id="deleteSelected">
+							<i class="fa fa-trash" data-toggle="modal">&nbsp;</i>
+						</button>
+						<button type="button">
+							<i class="fa fa-search searchClass" data-toggle="modal">&nbsp;</i>
+						</button>
+						<button type="button" id="reloadGrid">
+							<i class="fa fa-refresh">&nbsp;Grid</i>
+						</button>
+						<button type="button" id="refreshGrid">
+							<i class="fa fa-refresh">&nbsp;Page</i>
+						</button>
+						&nbsp;
+						[<span id="showingAppContextLebelId" style="color:red;">Showing All Context</span> ]
+					</div>
 				</div>
 				<div class="box-body ">
-					<table width="100%" id="roleHierarchyId"
+				  
+					<table  id="roleHierarchyId"
 						class="  table table-striped table-bordered table-hover table-condensed dt-responsive data-table">
 						<thead>
 							<tr>
@@ -35,7 +46,6 @@
 								<th>Contents</th>
 								<th width="2%">E</th>
 								<th width="2%">D</th>
-
 							</tr>
 						</thead>
 
@@ -47,7 +57,7 @@
 		</div>
 		<!-- /.col -->
 
-		<div class="col-md-7" id="roleHirarchyWidthChangeId">
+		<div class="col-md-6" id="roleHirarchyWidthChangeId">
 			<div class="box box-primary " style="min-height: 530px;">
 				<div class="box-header with-border">
 					<div class="box-title">

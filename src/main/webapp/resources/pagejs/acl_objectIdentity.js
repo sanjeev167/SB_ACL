@@ -83,6 +83,10 @@ var t;
 
 
 function loadGridAclObjectIdentity(sid,classWithPkg) {	
+
+
+  
+  
 	t = $('#aclObjectIdentityTableId').DataTable(
 			{
 				"retrieve" : true,// used for refreshing
@@ -94,6 +98,9 @@ function loadGridAclObjectIdentity(sid,classWithPkg) {
 				"serverSide" : true,
 				"ordering" : true,
 				"searching" : true,
+				//sDom: '<"search-box"r>lftip',//Will keep search within datable div
+				
+				"language": { "search": "<i class='fa fa-search'></i>&nbsp;" },
 				"aaSorting" : [ [ 2, "asc" ] ],
 				"ajax" : {
 					"url" : "/acl/monitor/objIdentity/paginated?sid="+sid +

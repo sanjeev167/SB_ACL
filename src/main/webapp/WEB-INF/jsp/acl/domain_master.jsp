@@ -76,33 +76,6 @@
 	font-size: small;
 }
 
-.example-modal .modal {
-	position: relative;
-	top: auto;
-	bottom: auto;
-	right: auto;
-	left: auto;
-	display: block;
-	z-index: 1;
-}
-
-.example-modal .modal {
-	background: transparent !important;
-}
-</style>
-
-
-<style type="text/css">
-.modal-dialog {
-	width: 400px;
-}
-
-.modal-header {
-	background-color: #337AB7;
-	padding: 16px 16px;
-	color: #FFF;
-	border-bottom: 2px dashed #337AB7;
-}
 </style>
 
 <!-- modal for add/update/view/search -->

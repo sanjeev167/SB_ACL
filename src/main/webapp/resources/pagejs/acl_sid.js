@@ -80,7 +80,13 @@ function searchAndReloadGridForAclSid(sid) {
 var t;
 
 
-function loadGridForAclSid(sid) {	
+function loadGridForAclSid(sid) {
+
+$('.dataTables_filter input[type="search"]').
+  attr('placeholder','Search in this blog ....').
+  css({'width':'70px','display':'inline-block'});
+
+	
 	t = $('#sidTableId').DataTable(
 			{
 				"retrieve" : true,// used for refreshing
@@ -93,6 +99,8 @@ function loadGridForAclSid(sid) {
 				"ordering" : true,
 				"searching" : true,
 				"aaSorting" : [ [ 3, "asc" ] ],
+				//sDom: '<"search-box"r>lftip',//Will keep search within datable div
+					"language": { "search": "<i class='fa fa-search'></i>&nbsp;" },
 				"ajax" : {
 					"url" : "/acl/monitor/sid/paginated?sid=" + sid + "",
 					"type" : "POST",

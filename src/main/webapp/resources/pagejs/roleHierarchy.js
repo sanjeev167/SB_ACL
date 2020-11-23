@@ -35,12 +35,7 @@ $(document).ready(function() {
 	loadGrid("");
 	preparePage();
 	  
-	//This will set the width of the data table search box.
-		   $('.dataTables_filter input[type="search"]').
-		   attr('placeholder','Search text').
-		   css({'width':'100px','display':'inline-block'});	
-		   
-		   
+	
 		   
 	// [1] Open an add modal.
 	$(document).on("click",".addClass",function() {
@@ -294,22 +289,18 @@ function loadGrid(contextId) {
 ;
 
 	t = $('#roleHierarchyId').DataTable(
-			{		
+			{					
 				
-				"dom": 'l<"toolbar">frtip',
-			     "initComplete": function(){
-			          $("div.toolbar").html(toolbarContent);           
-			       } ,
-				"retrieve" : true,// used for refreshing
-				
-				"bAutoWidth" : true,
-				"scrollY" : '41vh',
-				"scrollX" : '110vh',
+				"retrieve" : true,// used for refreshing				
+				//"bAutoWidth" : true,
+				//"scrollY" : '41vh',
+				//"scrollX" : '110vh',
 				//"scrollCollapse" : true,
-				"lengthMenu" : [ 5, 10, 15, 20 ],
+				"lengthMenu" : [ 5, 10, 15],
 				"processing" : true,
 				"serverSide" : true,
 				"ordering" : true,
+				"language": { "search": "<i class='fa fa-search'></i>&nbsp;" },
 				"searching" : true,
 				"aaSorting" : [[ 2, "asc" ] ],
 				"ajax" : {
@@ -318,12 +309,6 @@ function loadGrid(contextId) {
 					"type" : "POST",
 				},
 				
-				 
-				
-				
-			      
-				
-
 				"columns" : [
 					{
 						"searchable" : false,

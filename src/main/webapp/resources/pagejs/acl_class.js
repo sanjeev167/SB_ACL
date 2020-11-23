@@ -94,6 +94,7 @@ function loadGridForAclClass(classWithPkg) {
 				"serverSide" : true,
 				"ordering" : true,
 				"searching" : true,
+				"language": { "search": "<i class='fa fa-search'></i>&nbsp;" },
 				"aaSorting" : [ [ 2, "asc" ] ],
 				"ajax" : {
 					"url" : "/acl/monitor/aclClass/paginated?classWithPkg=" + classWithPkg + "",

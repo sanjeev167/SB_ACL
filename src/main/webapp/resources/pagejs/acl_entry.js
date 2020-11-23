@@ -93,7 +93,7 @@ function loadGridForAclEntry(objectIdentity) {
 				"processing" : true,
 				"serverSide" : true,
 				//"ordering" : true,
-				
+					"language": { "search": "<i class='fa fa-search'></i>&nbsp;" },
 				"searching" : true,
 				"aaSorting" : [ [ 2, "asc" ] ],
 				"ajax" : {
